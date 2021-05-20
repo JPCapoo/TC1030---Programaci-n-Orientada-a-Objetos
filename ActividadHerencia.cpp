@@ -62,17 +62,17 @@ Persona::Persona(string n, int e){
     edad = e;
 };
 
-//Default constructor de la clase Persona
+//Default constructor de la clase Estudiante
 Estudiante::Estudiante(){
     carrera = "N/A";
-}
+};
 
 //Constuctor de la clase Estudiante (Clase Hija)
 Estudiante::Estudiante(string n, int e, string c): Persona(n, e){
     carrera = c;
-}
+};
 
-//Default constructor de la clase Persona
+//Default constructor de la clase Maestro
 Maestro::Maestro(){
     depto = "N/A";
 }
@@ -115,7 +115,7 @@ string Estudiante::setCarrera(string c){
 void Estudiante::muestraDatosE(){
     muestraDatosP();
     cout << "Carrera: " << carrera << endl;
-}
+};
 
 string Maestro::setDepto(string d){
     depto = d;
@@ -125,7 +125,8 @@ string Maestro::setDepto(string d){
 void Maestro::muestraDatosM(){
     muestraDatosP();
     cout << "Departamento: " << depto << endl;
-}
+};
+
 int main () {
 
     Persona persona1("Oscar", 24);

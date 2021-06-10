@@ -75,10 +75,8 @@ string LlamadaMillonario() {
     cout << "NUEVO ITEM: MOCHILA" << endl;
     Sleep(1000);
     cout << endl;
-    cout << "LLAVE: Este item te servira para almacenar todos tus items en un lugar seguro" << endl;
+    cout << "MOCHILA: Este item te servira para almacenar todos tus items en un lugar seguro" << endl;
     Sleep(1000);
-    cout << endl;
-
     cout << endl;
     cout << "Millonario: Buenas Noches Smith, muchos amigos me hablaron bien de ti y de lo impecable que es tu trabajo, te tengo un trabajo. ";
     Sleep(3000);

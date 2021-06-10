@@ -13,7 +13,7 @@ class Items {
     public: //Métodos
         Items(); //Default Constructor
         Items(string, int); //Constructor
-        string setNombre(string);
+        virtual string setNombre(string);
 };
 
 Items::Items(){

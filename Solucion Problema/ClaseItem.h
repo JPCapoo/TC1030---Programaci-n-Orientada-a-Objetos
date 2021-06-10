@@ -32,5 +32,35 @@ string Items::setNombre(string n){
     return nombre;
 }
 
+// Clase equipo
+
+class Equipo: public Items{
+    protected:
+        bool existe;
+    public:
+        Equipo();
+        Equipo(string, int, bool);
+        bool setExiste(bool);
+        bool getExiste();
+};
+
+Equipo::Equipo() {
+    existe = false;
+}
+
+Equipo::Equipo(string n, int niv , bool e){
+    existe = e;
+}
+
+bool Equipo::setExiste(bool e){
+    existe = e;
+
+    return existe;
+}
+
+bool Equipo::getExiste() {
+    return existe;
+}
+
 
 #endif

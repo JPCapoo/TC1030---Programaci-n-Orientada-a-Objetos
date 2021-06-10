@@ -15,6 +15,7 @@ class Habitacion {
     public: //Métodos
         Habitacion(); //Default Constructor
         Habitacion(string, int, string, int); //Constructor
+        string getNombre();
         string setEstilo(string);
         int setNumHabitacion(int);
 };
@@ -45,5 +46,9 @@ int Habitacion::setNumHabitacion(int n){
 
     return numHabitacion;
 }
+
+string Habitacion::getNombre(){
+    return nombre;
+};
 
 #endif
